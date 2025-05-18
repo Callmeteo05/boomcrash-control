@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BoomCrash EA Control Panel</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+    input, button { padding: 10px; margin: 10px; font-size: 16px; }
+    .status { font-weight: bold; color: green; }
+  </style>
+</head>
+<body>
+  <h2>BoomCrash Remote Control Panel</h2>
+  <p>Enter your Deriv token (stored in browser only):</p>
+  <input type="password" id="token" placeholder="Deriv Token">
+  <br>
+  <button onclick="sendCommand('start')">Start EA</button>
+  <button onclick="sendCommand('stop')">Stop EA</button>
+  <p id="status" class="status">Status: Not Sent</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
