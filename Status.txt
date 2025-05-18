@@ -1,3 +1,0 @@
-start — to activate EA
-stop — to pause EA
-
